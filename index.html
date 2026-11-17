@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rampay</title>
+<!--  fav icon -->
+  <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+  <!-- Bootstrap + Font (internet chahiye) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Apni CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- font aweosme icons   -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<!-- =====================================================
+     1) NAVBAR
+     - Logo badalna hai? assets/images/logo.svg ko apni image se replace karo
+       (same naam rakho) ya neeche src change karo.
+     - Menu links badalne hain? <a> ka text aur href badlo.
+     ===================================================== -->
+<nav class="navbar navbar-expand-lg rp-navbar">
+  <div class="container">
+
+    <a class="rp-brand" href="#">
+      <img src="assets/images/logo.svg" alt="Rampay logo">   <!-- LOGO IMAGE -->
+      Rampay
+    </a>
+
+    <!-- Mobile menu button -->
+    <button class="navbar-toggler rp-toggler ms-auto" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+      <span></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+     
+        
+
+      </ul>
+      <div class="text-center mt-3 mt-lg-0 pb-3 pb-lg-0">
+        <a href="#" class="btn btn-rp">Free Trial</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- =====================================================
+     2) HERO SECTION
+     - Heading / paragraph / button text yahin se badlo.
+     ===================================================== -->
+<section class="rp-hero-wrap">
+  <div class="rp-hero">
+
+    <!-- Peeche ke halke blocks (sirf desktop pe dikhte hain) -->
+    <div class="deco l1"></div><div class="deco l2"></div><div class="deco l3"></div>
+    <div class="deco r1"></div><div class="deco r2"></div><div class="deco r3"></div>
+
+    <!-- Text part -->
+    <div class="container hero-text">
+      <h1>Elevate Your Financial Management with Rampay</h1>
+      <p>
+        Streamline your business's financial management with our intuitive,
+        scalable SaaS platform. Designed for U.S. enterprises, our solutions
+        simplify complex processes.
+      </p>
+      <a href="#" class="btn btn-white-pill">Start now — It’s Free</a>
+    </div>
+
+    <!-- =================================================
+         3) CARDS (neeche ke 3 phone cards)
+         Har card mein images yahan se badlo:
+           - icon.svg      -> chhota blue circle icon
+           - chart.svg     -> beech wala graph
+           - flag-id.svg / flag-uk.svg -> flags
+         Text (amount, naam) seedha edit kar sakte ho.
+         ================================================= -->
+    <div class="cards">
+
+      <!-- LEFT CARD -->
+      <div class="pcard side left">
+        <div class="muted">My Balance</div>
+        <div class="d-flex justify-content-between align-items-center my-2">
+          <div class="amount">$2,259 <small>USD</small></div>
+          <span class="badge-green">+20%</span>
+        </div>
+        <div class="d-flex gap-3">
+          <div class="mini-box">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="assets/images/icon.svg" class="icon-sm" alt=""> Income
+            </div>
+            <div class="amount-sm">$2,259 <small>USD</small></div>
+          </div>
+          <div class="mini-box">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="assets/images/icon.svg" class="icon-sm" alt=""> Expense
+            </div>
+            <div class="amount-sm">$2,259 <small>USD</small></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER CARD -->
+      <div class="pcard center">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <img src="assets/images/icon.svg" class="icon" alt="">
+          Weekly Overview
+        </div>
+        <div class="muted">Amount</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="amount">$2,259 <small>USD</small></div>
+          <span class="badge-green">+20%</span>
+        </div>
+        <img src="assets/images/chart.svg" class="chart" alt="chart">   <!-- GRAPH IMAGE -->
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="pcard side right">
+        <div class="d-flex align-items-center gap-3">
+          <img src="assets/images/icon.svg" class="icon" alt="">
+          Bank Transfer
+        </div>
+        <div class="transfer-bar">
+          <img src="assets/images/flag-id.svg" class="flag" alt="">   <!-- FLAG 1 -->
+          <img src="assets/images/icon.svg" class="icon-sm" alt="">
+          <img src="assets/images/flag-uk.svg" class="flag" alt="">   <!-- FLAG 2 -->
+        </div>
+        <div class="muted">Amount</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="amount">$2,259 <small>USD</small></div>
+          <span class="badge-green">+20%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     SECTION 2 : STATS
+     Hero section ke baad paste karo.
+     - Numbers / text seedha edit karo.
+     - Icons: assets/images/icon.svg ko apne icon se replace karo
+       (ya src mein alag naam likho).
+     ===================================================== -->
+<section class="rp-section rp-stats">
+  <div class="container">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5">
+      <h2 class="rp-title">Unlock the Power of Your<br>Business <span>Data</span></h2>
+      <a href="#" class="btn btn-rp align-self-md-start">Free Trial</a>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <img src="assets/images/icon.svg" class="stat-icon" alt="">        <!-- ICON 1 -->
+          <div>
+            <div class="stat-num">2500<span>+</span></div>
+            <p class="stat-label">Partners &amp; customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <img src="assets/images/icon.svg" class="stat-icon" alt="">        <!-- ICON 2 -->
+          <div>
+            <div class="stat-num">$2’259<span>+</span></div>
+            <p class="stat-label">Raise Invest in 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <img src="assets/images/icon.svg" class="stat-icon" alt="">        <!-- ICON 3 -->
+          <div>
+            <div class="stat-num">4.9<small>/5.0</small></div>
+            <p class="stat-label">Customer review</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     SECTION 3 : WORKFLOW (Step 1, Step 2)
+     Naya step chahiye? Ek poora <div class="row step-row"> copy karke
+     neeche paste karo aur number / text badlo.
+     ===================================================== -->
+<section class="rp-section pt-0 rp-workflow">
+  <div class="container">
+
+    <div class="workflow-head">
+      <h2 class="rp-title">How Our SaaS Finance Platform Simplifies Your <span>Workflow</span></h2>
+    </div>
+
+    <!-- ================= STEP 1 ================= -->
+    <div class="row step-row align-items-center">
+
+      <!-- Left : mockup -->
+      <div class="col-lg-6">
+        <div class="mock-wrap">
+          <div class="mock-card">
+            <div class="mock-title">Welcome Back!</div>
+            <div class="muted" style="font-size:.7rem;color:var(--grey)">My Balance</div>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="mock-amount">$3,444 <small>USD</small></div>
+              <span class="badge-green">+20%</span>
+            </div>
+
+            <div class="seg"><span>Daily</span><span class="active">Weekly</span><span>Yearly</span></div>
+
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 22, 2024</small></div></div>
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 22, 2024</small></div></div>
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 22, 2024</small></div></div>
+          </div>
+
+          <!-- Floating card -->
+          <div class="float-card">
+            <div class="f-title"><img src="assets/images/icon.svg" alt=""> Total Users</div>
+            <div class="avatars mt-2">
+              <img src="assets/images/avatar-1.svg" alt="">     <!-- USER PHOTO 1 -->
+              <img src="assets/images/avatar-2.svg" alt="">     <!-- USER PHOTO 2 -->
+              <img src="assets/images/avatar-3.svg" alt="">     <!-- USER PHOTO 3 -->
+              <b>25k<span>+</span></b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right : text -->
+      <div class="col-lg-6 step-info">
+        <span class="step-no">1</span>
+        <h3 class="step-title">Sign Up and Customize</h3>
+        <p class="step-text">Create your account in minutes and tailor the platform to meet your company's unique financial needs.</p>
+        <div>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Login</span>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Create Account</span>
+        </div>
+        <a href="#" class="btn btn-sm-rp mt-3">Learn More</a>
+      </div>
+    </div>
+
+    <!-- ================= STEP 2 ================= -->
+    <div class="row step-row align-items-center">
+
+      <!-- Left : mockup -->
+      <div class="col-lg-6">
+        <div class="mock-wrap">
+          <div class="mock-card">
+            <div class="mock-title"><img src="assets/images/icon.svg" alt=""> Weekly Overview</div>
+            <div class="muted" style="font-size:.7rem;color:var(--grey)">Amount</div>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="mock-amount">$2,300 <small>USD</small></div>
+              <span class="badge-green">+20%</span>
+            </div>
+
+            <img src="assets/images/chart.svg" class="mock-chart" alt="chart">   <!-- GRAPH IMAGE -->
+            <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
+
+            <div class="note">
+              <img src="assets/images/icon.svg" alt="">
+              <div>You're doing great!<small>You saved 20% more than last week</small></div>
+            </div>
+          </div>
+
+          <!-- Floating card -->
+          <div class="float-card">
+            <div class="f-title"><img src="assets/images/icon.svg" alt=""> Success Import Data</div>
+            <small>Import data from North Fuse</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right : text -->
+      <div class="col-lg-6 step-info">
+        <span class="step-no">2</span>
+        <h3 class="step-title">Integrate Your Data</h3>
+        <p class="step-text">Seamlessly connect your existing financial tools and import your data for a smooth transition.</p>
+        <div>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Integrate Data</span>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Import data</span>
+        </div>
+        <a href="#" class="btn btn-sm-rp mt-3">Learn More</a>
+      </div>
+    </div>
+<!-- =====================================================
+     STEP 3
+     Isse Step 2 ke baad, workflow section ke andar paste karo
+     (jahan Step 2 ka </div> khatam hota hai, section band hone se pehle).
+     ===================================================== -->
+    <!-- ================= STEP 3 ================= -->
+    <div class="row step-row align-items-center">
+
+      <!-- Left : mockup -->
+      <div class="col-lg-6">
+        <div class="mock-wrap">
+          <div class="mock-card">
+            <div class="seg" style="margin-top:0"><span>Daily</span><span class="active">Weekly</span><span>Yearly</span></div>
+
+            <div class="grid-2">
+              <div class="mini-stat">
+                <div class="ms-top"><img src="assets/images/icon.svg" alt="">Income</div>
+                <div class="ms-val">$40,000 <small>USD</small></div>
+              </div>
+              <div class="mini-stat">
+                <div class="ms-top"><img src="assets/images/icon.svg" alt="">Expense</div>
+                <div class="ms-val">$1,369 <small>USD</small></div>
+              </div>
+              <div class="mini-stat">
+                <div class="ms-top"><img src="assets/images/icon.svg" alt="">Deposit</div>
+                <div class="ms-val">$10,000 <small>USD</small></div>
+              </div>
+              <div class="mini-stat">
+                <div class="ms-top"><img src="assets/images/icon.svg" alt="">Disbursements</div>
+                <div class="ms-val">$5,000 <small>USD</small></div>
+              </div>
+            </div>
+
+            <div class="history-title">History</div>
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 20, 2024</small></div></div>
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 21, 2024</small></div><span class="tx-amt neg">-$400</span></div>
+          </div>
+
+          <!-- Floating card -->
+          <div class="float-card amount-card">
+            <small>Amount</small>
+            <div class="f-big">$50,782 <small>USD</small></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right : text -->
+      <div class="col-lg-6 step-info">
+        <span class="step-no">3</span>
+        <h3 class="step-title">Start Managing Efficiently</h3>
+        <p class="step-text">Begin using our intuitive dashboard to manage your finances, generate reports, and optimize operations from day one.</p>
+        <div>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Manage Finance</span>
+          <span class="chip"><img src="assets/images/icon.svg" alt="">Optimize Operations</span>
+        </div>
+        <a href="#" class="btn btn-sm-rp mt-3">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     TESTIMONIALS + PRICING
+     Workflow section ke baad paste karo.
+     (Step 3 alag file step3.html mein hai.)
+     ===================================================== -->
+
+<!-- =====================================================
+     TESTIMONIALS
+     - Photo badalni hai? assets/images/avatar-1.svg ki jagah apni photo
+       (jpg/png) daalo aur src mein naam likho.
+     - Naya review chahiye? ek <div class="col-..."> block copy karo.
+     ===================================================== -->
+<section class="rp-section pt-0 rp-reviews">
+  <div class="container">
+
+    <h2 class="rp-title text-center mb-5">What Our Clients Are <span>Saying</span></h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-5">
+        <div class="review-card">
+          <div class="review-head">
+            <img src="assets/images/avatar-2.png" alt="">                 <!-- PHOTO -->
+            <div>
+              <div class="review-name">John Clayton</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">I highly recommend [Product Name] to any business looking to streamline their financial operations and gain better control over their finances.</p>
+          <div class="review-date">August 29, 2024</div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="review-card">
+          <div class="review-head">
+            <img src="assets/images/avatar-1.png" alt="">
+            <div>
+              <div class="review-name">John Clayton</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Before using [Product Name], managing our financial processes was a constant headache. We struggled with manual data entry, scattered reports, and a lack of real-time visibility into our financial health.</p>
+          <div class="review-date">August 29, 2024</div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="review-card">
+          <div class="review-head">
+            <img src="assets/images/avatar-1.png" alt="">
+            <div>
+              <div class="review-name">John Clayton</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Before using [Product Name], managing our financial processes was a constant headache. We struggled with manual data entry, scattered reports, and a lack of real-time visibility into our financial health.</p>
+          <div class="review-date">August 29, 2024</div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="review-card">
+          <div class="review-head">
+            <img src="assets/images/avatar-2.png" alt="">
+            <div>
+              <div class="review-name">John Clayton</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">I highly recommend [Product Name] to any business looking to streamline their financial operations and gain better control over their finances.</p>
+          <div class="review-date">August 29, 2024</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     PRICING
+     - Price badalni hai? data-monthly aur data-yearly dono mein
+       number badlo (Monthly/Yearly toggle inhi se chalta hai).
+     - Feature list: <li> ka text badlo ya naya <li> add karo.
+     - Beech wala card "featured" class se bada dikhta hai.
+     ===================================================== -->
+<section class="rp-section pt-0 rp-pricing" id="pricing">
+  <div class="container">
+
+    <div class="pricing-head">
+      <h2 class="rp-title">Simple, Transparent <span>Pricing</span></h2>
+      <p>Choose a plan that fits your business needs and budget. No hidden fees, no surprises—just straightforward pricing for powerful financial management.</p>
+    </div>
+
+    <div class="text-center">
+      <div class="billing-toggle" id="billingToggle">
+        <button type="button" class="active" data-mode="monthly">Monthly</button>
+        <button type="button" data-mode="yearly">Yearly</button>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- PLAN 1 -->
+      <div class="col-lg-4">
+        <div class="price-card">
+          <div class="plan-name"><img src="assets/images/icon.svg" alt="">Basic Plan</div>
+          <div class="plan-price"><span class="price" data-monthly="$99.00" data-yearly="$990.00">$99.00</span> <small>USD</small></div>
+          <p class="plan-desc">Perfect for small businesses or startups, our Starter Plan gives you the essential tools to manage your finances with ease.</p>
+          <ul class="plan-list">
+            <li>Unlimited Invoices</li>
+            <li>Next-Day Payments</li>
+            <li>Secure Payment Gateway</li>
+            <li>Basic Analytics and Reporting</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#" class="btn-plan">Get Started</a>
+        </div>
+      </div>
+
+      <!-- PLAN 2 (featured / beech wala) -->
+      <div class="col-lg-4">
+        <div class="price-card featured">
+          <div class="plan-name"><img src="assets/images/icon.svg" alt="">Basic Plan</div>
+          <div class="plan-price"><span class="price" data-monthly="$150.00" data-yearly="$1,500.00">$150.00</span> <small>USD</small></div>
+          <p class="plan-desc">Designed for growing businesses, the Basic Plan expands on our Starter package with additional features and integrations.</p>
+          <ul class="plan-list">
+            <li>Unlimited Invoices</li>
+            <li>Next-Day Payments</li>
+            <li>Secure Payment Gateway</li>
+            <li>Basic Analytics and Reporting</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#" class="btn-plan filled">Get Started</a>
+        </div>
+      </div>
+
+      <!-- PLAN 3 -->
+      <div class="col-lg-4">
+        <div class="price-card">
+          <div class="plan-name"><img src="assets/images/icon.svg" alt="">Basic Plan</div>
+          <div class="plan-price"><span class="price" data-monthly="$390.00" data-yearly="$3,900.00">$390.00</span> <small>USD</small></div>
+          <p class="plan-desc">Tailored for large enterprises, this plan offers advanced features, personalized support, and the scalability.</p>
+          <ul class="plan-list">
+            <li>Unlimited Invoices</li>
+            <li>Next-Day Payments</li>
+            <li>Secure Payment Gateway</li>
+            <li>Basic Analytics and Reporting</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#" class="btn-plan">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Monthly / Yearly toggle ka chhota script (isse mat hatana) -->
+<script>
+  document.querySelectorAll('#billingToggle button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('#billingToggle button').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var mode = btn.getAttribute('data-mode');
+      document.querySelectorAll('.price').forEach(function (p) {
+        p.textContent = p.getAttribute('data-' + mode);
+      });
+    });
+  });
+</script>
+<!-- =====================================================
+     BLOG + CTA + FOOTER
+     Pricing section ke baad paste karo.
+
+     ZAROORI: footer ke icons ke liye <head> mein ye line daalo:
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+     ===================================================== -->
+
+<!-- =====================================================
+     BLOG
+     - Image badalni hai? assets/images/blog-1.svg ki jagah apni photo (jpg/png)
+       daalo aur src mein naam likho.
+     ===================================================== -->
+<section class="rp-section pt-0 rp-blog">
+  <div class="container">
+
+    <h2 class="rp-title text-center mb-5">Maximizing the Value of<br>Business <span>Data</span></h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="assets/images/image.png" class="blog-img" alt="">          <!-- BLOG IMAGE 1 -->
+          <div class="blog-body">
+            <h3 class="blog-title">How real-time analytics can revolutionize your financial strategy</h3>
+            <p class="blog-text">In today's fast-paced world, financial management processes can be slow and fragmented, leaving your company stuck.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="assets/images/blog-2.png" class="blog-img" alt="">          <!-- BLOG IMAGE 2 -->
+          <div class="blog-body">
+            <h3 class="blog-title">Simplify and empower your financial management with Nicepay</h3>
+            <p class="blog-text">In today's fast-paced world, keeping up with financial management can be overwhelming.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="assets/images/blog-3.png" class="blog-img" alt="">          <!-- BLOG IMAGE 3 -->
+          <div class="blog-body">
+            <h3 class="blog-title">The importance of streamlining business payments</h3>
+            <p class="blog-text">In this blog, discuss how businesses can improve efficiency by using automated payment systems.</p>
+            <a href="#" class="blog-link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-sm-rp">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     CTA : "Ready to Transform ..."
+     ===================================================== -->
+<section class="rp-section pt-0 rp-cta">
+  <div class="container">
+    <div class="rp-cta-box">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 pb-5">
+          <h2 class="rp-title">Ready to Transform Your Financial <span>Management?</span></h2>
+          <p>Experience the future of finance with our cutting-edge SaaS platform. Start optimizing your financial operations today!</p>
+          <a href="#" class="btn btn-rp">Schedule a Demo</a>
+        </div>
+
+        <div class="col-lg-6 align-self-end">
+          <div class="cta-mock">
+            <div class="seg"><span>Daily</span><span class="active">Weekly</span><span>Yearly</span></div>
+            <div class="grid-2">
+              <div class="mini-stat"><div class="ms-top"><img src="assets/images/icon.svg" alt="">Income</div><div class="ms-val">$40,000 <small>USD</small></div></div>
+              <div class="mini-stat"><div class="ms-top"><img src="assets/images/icon.svg" alt="">Expense</div><div class="ms-val">$1,369 <small>USD</small></div></div>
+              <div class="mini-stat"><div class="ms-top"><img src="assets/images/icon.svg" alt="">Deposit</div><div class="ms-val">$10,000 <small>USD</small></div></div>
+              <div class="mini-stat"><div class="ms-top"><img src="assets/images/icon.svg" alt="">Disbursements</div><div class="ms-val">$5,000 <small>USD</small></div></div>
+            </div>
+            <div class="history-row"><span>History</span><a href="#">View All</a></div>
+            <div class="tx"><img src="assets/images/icon.svg" alt=""><div>North Fuse<small>August 20, 2024</small></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+     - Address / email / phone seedha edit karo.
+     - Social links: href mein apna link daalo.
+     ===================================================== -->
+<footer class="rp-footer">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <a class="f-brand" href="#"><img src="assets/images/logo.svg" alt="">Rampay</a>
+        <ul class="f-contact">
+          <li><i class="bi bi-geo-alt-fill"></i>123 Example Road New York, NY 12345</li>
+          <li><i class="bi bi-envelope-fill"></i>email@example.com</li>
+          <li><i class="bi bi-telephone-fill"></i>(555) 555-5555</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <div class="f-heading">Useful Link</div>
+        <ul class="f-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <div class="f-heading">Follow Us</div>
+        <ul class="f-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="f-heading">Subscribe our newsletter</div>
+        <form class="news-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="f-bottom">
+      <span>Copyright © 2024</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
